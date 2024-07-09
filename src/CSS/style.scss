@@ -1,0 +1,67 @@
+@import 'variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    color: $branco;
+}
+
+body {
+    background-image: url(../img/bg-vaporwave_celular.jpg);
+}
+
+main {
+    margin: 1.8rem;
+    padding: 70px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid $branco;
+    background-color: $bg-Color;
+
+    #head {
+        border-bottom: 2px solid $branco;
+        margin-bottom: 10px;
+
+        .user{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .imgUser{
+                border-radius: 100%;
+                border: 2px solid $branco;
+                overflow: hidden;
+                margin-bottom: 0.5rem;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            .infosUser {
+                text-align: center;
+                h3 {
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                }
+                p {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+
+    #buttons {
+        button {
+            background: none;
+        }
+    }
+}
